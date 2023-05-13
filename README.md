@@ -1,2 +1,2 @@
-# raspberry-pi-pico-w-wifi-robot-car
-A Raspberry Pi Pico W powered WiFi robot car that can be controlled using your mobile phones
+# Raspberry Pi Pico W WiFi Robot Car
+A Raspberry Pi Pico W powered WiFi robot car that can be controlled using your mobile phones using MicroPython
