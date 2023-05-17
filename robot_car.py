@@ -33,35 +33,35 @@ class RobotCar:
 
     def move_forward(self):
         print("Car is moving forward")
-        self.left_motor_pin1.duty_u16(RobotCar.MAX_DUTY_CYCLE)
-        self.left_motor_pin2.duty_u16(self.__get_current_duty_cycle())
-
-        self.right_motor_pin1.duty_u16(RobotCar.MAX_DUTY_CYCLE)
-        self.right_motor_pin2.duty_u16(self.__get_current_duty_cycle())
-
-    def move_backward(self):
-        print("Car is moving backward...")
         self.left_motor_pin1.duty_u16(self.__get_current_duty_cycle())
         self.left_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
 
         self.right_motor_pin1.duty_u16(self.__get_current_duty_cycle())
         self.right_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
 
-    def turn_left(self):
-        print("Car is moving left...")
+    def move_backward(self):
+        print("Car is moving backward...")
         self.left_motor_pin1.duty_u16(RobotCar.MAX_DUTY_CYCLE)
         self.left_motor_pin2.duty_u16(self.__get_current_duty_cycle())
 
         self.right_motor_pin1.duty_u16(RobotCar.MAX_DUTY_CYCLE)
-        self.right_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
+        self.right_motor_pin2.duty_u16(self.__get_current_duty_cycle())
 
-    def turn_right(self):
-        print("Car is moving right...")
+    def turn_left(self):
+        print("Car is moving left...")  
         self.left_motor_pin1.duty_u16(RobotCar.MAX_DUTY_CYCLE)
         self.left_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
 
+        self.right_motor_pin1.duty_u16(self.__get_current_duty_cycle())
+        self.right_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
+
+    def turn_right(self):
+        print("Car is moving right...") 
+        self.left_motor_pin1.duty_u16(self.__get_current_duty_cycle())
+        self.left_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
+
         self.right_motor_pin1.duty_u16(RobotCar.MAX_DUTY_CYCLE)
-        self.right_motor_pin2.duty_u16(self.__get_current_duty_cycle())
+        self.right_motor_pin2.duty_u16(RobotCar.MAX_DUTY_CYCLE)
 
     def stop(self):
         print("Stopping car...")
