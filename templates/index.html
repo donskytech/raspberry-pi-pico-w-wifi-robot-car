@@ -1,0 +1,62 @@
+{% args current_speed %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raspberry Pi Pico Wifi Robot Car</title>
+    <link
+      href="../static/css/entireframework.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../static/css/custom.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="nav blue" tabindex="-1" onclick="this.focus()">
+      <div class="container">
+        <a class="pagename current" href="https://www.donskytech.com"
+          >www.donskytech.com</a
+        >
+      </div>
+    </nav>
+    <button class="btn-close btn btn-sm">×</button>
+    <div class="container">
+      <div class="hero">
+        <h2>Raspberry Pi Pico W WiFi Robot Car</h2>
+      </div>
+
+      <div class="row">
+        <div class="col c12 controller">
+          <div class="set blue">
+            <div>
+              <nav class="d-pad">
+                <a class="up control" data-direction="forward"></a>
+                <a class="right control" data-direction="right"></a>
+                <a class="down control" data-direction="reverse"></a>
+                <a class="left control" data-direction="left"></a>
+              </nav>
+            </div>
+          </div>
+          <div class="range-slider">
+            <h2>Speed</h2>
+            <input
+              class="input-range"
+              type="range"
+              step="1"
+              value="{{ current_speed }}"
+              min="1"
+              max="100"
+              id="currentSpeed"
+            />
+            <span class="speed-value" id="speedValue"
+              >{% if current_speed %}{{ current_speed }}{% endif %}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../static/js/custom.js"></script>
+  </body>
+</html>
