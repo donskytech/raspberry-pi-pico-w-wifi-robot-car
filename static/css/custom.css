@@ -44,23 +44,7 @@ Controller
 .controller {
   text-align: center;
 }
-/* .controller {
-  display: flex;
-}
-.left {
-  flex: 2;
-}
-.right {
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-/* input[type="range"] {
-  appearance: slider-vertical;
-  color: black;
-} */
+
 .range-slider {
   text-align: center;
 }

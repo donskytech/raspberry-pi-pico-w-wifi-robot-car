@@ -3,12 +3,11 @@ window.addEventListener("load", onLoad);
 
 function onLoad() {
   initializeSocket();
-  setDefaultSpeed();
 }
 
 function initializeSocket() {
   console.log(
-    "Opening WebSocket connection to Raspberry Pi MicroPython Server..."
+    "Opening WebSocket connection to Raspberry Pi Pico W MicroPython Server..."
   );
   var targetUrl = `ws://${location.host}/ws`;
   websocket = new WebSocket(targetUrl);
@@ -48,22 +47,6 @@ speed.addEventListener("input", () => {
   speedValue.innerHTML = speed.value;
   sendMessage("speed : " + speed.value);
 });
-// var speedSettings = document.querySelectorAll(
-//   'input[type=radio][name="speed-settings"]'
-// );
-// speedSettings.forEach((radio) =>
-//   radio.addEventListener("change", () => {
-//     var speedSettings = radio.value;
-//     console.log("Speed Settings :: " + speedSettings);
-//     sendMessage(speedSettings);
-//   })
-// );
-
-function setDefaultSpeed() {
-  // console.log("Setting default speed to normal..");
-  // let normalOption = document.getElementById("option-2");
-  // normalOption.checked = true;
-}
 
 /*
 O-Pad/ D-Pad Controller and Javascript Code
