@@ -1,5 +1,6 @@
 # Raspberry Pi Pico W WiFi Robot Car
-A Raspberry Pi Pico W powered WiFi robot car that can be controlled using your mobile phones using MicroPython
+A Raspberry Pi Pico W powered WiFi robot car that can be controlled using your mobile phones using MicroPython  
+![Raspberry Pi Pico W - WiFi Robot Car using WebSocket](https://github.com/donskytech/raspberry-pi-pico-w-wifi-robot-car/assets/69466026/693af5c2-4166-48bc-959a-d4d06d3b0371)
   
 ## Writeup  
 https://www.donskytech.com/raspberry-pi-pico-w-wifi-robot-car/  
