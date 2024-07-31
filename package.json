@@ -1,9 +1,8 @@
 {
     "urls": [
-      ["lib/microdot/__init__.py", "github:miguelgrinberg/microdot/src/microdot/__init__.py"],
-      ["lib/microdot/microdot.py", "github:miguelgrinberg/microdot/src/microdot/microdot.py"],
-      ["lib/microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/utemplate.py"]
-      
+      ["microdot/__init__.py", "github:miguelgrinberg/microdot/blob/main/src/microdot/__init__.py"],
+      ["microdot/microdot.py", "github:miguelgrinberg/microdot/blob/main/src/microdot/microdot.py"],
+      ["microdot/utemplate.py", "github:miguelgrinberg/microdot/blob/main/src/microdot/utemplate.py"]
     ],
     "deps": [
         ["asyncio", "latest"]
