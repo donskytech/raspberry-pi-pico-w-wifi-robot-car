@@ -2,7 +2,7 @@
     "urls": [
       ["lib/microdot/__init__.py", "github:miguelgrinberg/microdot/src/microdot/__init__.py"],
       ["lib/microdot/microdot.py", "github:miguelgrinberg/microdot/src/microdot/microdot.py"],
-      ["lib/microdot/utemplate.py", "github:miguelgrinberg/microdotsrc/microdot/utemplate.py"]
+      ["lib/microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/utemplate.py"]
       
     ],
     "deps": [
